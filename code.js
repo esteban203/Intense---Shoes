@@ -18,7 +18,7 @@ MongoClient.connect('mongodb+srv://cluster0-ied74.mongodb.net/tienda',
 {
     auth:{
         user: 'esteban203',
-        password: ' coldplay'
+        password: 'coldplay'
     }
 },
 
