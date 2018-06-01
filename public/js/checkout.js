@@ -1,6 +1,6 @@
 console.log(arreglo);
 
-fetch('http://localhost:5000/productosPorIds?id=' + arreglo)
+fetch('https://intense-shoes.herokuapp.com/productosPorIds?id=' + arreglo)
     .then(function (res) {
         return res.json();
     })
