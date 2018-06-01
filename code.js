@@ -29,7 +29,7 @@ function (err, client) {
     db = client.db('tienda');
 
     // Iniciar servidor
-    app.listen(process.env.PORT || 1234); 
+    app.listen(process.env.PORT || 5000); 
 });
 
 app.get('/', (req, res) => {
