@@ -34,7 +34,7 @@ function (err, client) {
 
 app.get('/', (req, res) => {
 
-    var prod = db.collection('tienda')
+    var prod = db.collection('productos')
         .find();
 
     if (req.query.color)
