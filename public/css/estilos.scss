@@ -1,0 +1,1808 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+//Variables
+//Fuentes
+$fuenteNormal:'Montserrat',
+sans-serif;
+$fuenteRARA:'Permanent Marker',
+cursive;
+//Colores
+$colorElementos: rgb(236,
+165,
+227);
+$gris: rgb(153,
+149,
+152);
+$negroFondo:#1a1a1a;
+* {
+    //overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    h1 {
+        display: block;
+        color: rgb(255, 255, 255);
+        font-family: $fuenteNormal;
+        font-size: 40px;
+        padding-left: 200px;
+        padding-top: 100px;
+        font-weight: 600;
+    }
+    h2 {
+        display: block;
+        color: black;
+        font-weight: 200;
+        font-size: 30px;
+        font-family: $fuenteNormal;
+    }
+    h3 {
+        display: block;
+        color: black;
+        font-weight: 500;
+        font-size: 25px;
+        font-family: $fuenteNormal;
+    }
+    h4 {
+        display: block;
+        color: black;
+        font-weight: 800;
+        font-size: 20px;
+        font-family: $fuenteNormal;
+    }
+}
+
+nav {
+    background-color: rgb(0, 0, 0); //width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    .izquierda {
+        float: left;
+        width: 80%;
+    }
+    .derecha {
+        width: 20%;
+        float: left;
+    }
+    p {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 20px;
+        padding-left: 180px;
+        padding-right: 200px;
+        font-family: $fuenteRARA;
+        font-size: 30px;
+    }
+    button {
+        transition: 0.5s;
+        display: block;
+        background-color: $colorElementos;
+        text-align: center;
+        margin: 15px 0 18px 0px;
+        padding: 5px 5px;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+        color: white;
+        font-family: $fuenteNormal;
+        img {
+            background-size: cover;
+        }
+    }
+    button:hover {
+        background-color: rgb(248, 129, 188);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+        font-family: $fuenteNormal;
+        transition: 0.5s;
+    }
+    li a:hover {
+        background-color: $colorElementos;
+        transition: 0.5s;
+    }
+    input {
+        height: 27px;
+        width: 250px;
+        border: none;
+        font-size: 14px;
+        padding: 7px 5px 5px 10px;
+        font-family: $fuenteNormal;
+        display: block;
+        margin: 15px 0 15px 25px;
+    }
+}
+
+.banner {
+    #granim-canvas {
+        display: block;
+        width: 100%;
+        min-width: 200px;
+        height: calc(90vh - 90px);
+        min-height: 100px; //margin: 50px;
+    }
+
+    img{
+        position: absolute;
+        margin-top: -400px;
+        right: 30%;
+    }
+}
+
+//GALERIA
+.galeria {
+    h1 {
+        color: black;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .menuGaleria11 {
+        height: 240px;
+    }
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+//DESCRIPCION
+.descripcion {
+    overflow-x: hidden;
+    .logo {
+        padding-top: 80px;
+        height: 170px;
+        padding-left: 200px;
+    }
+    h2 {
+        padding-left: 10px;
+        margin-top: -10px;
+    } //DESCRIPCION 1
+    .descripcion1 {
+        height: 400px;
+        background-color: black;
+        .izq {
+            height: 100%;
+            float: left;
+            width: 25%;
+            background-image: url("../img/holographic.png");
+            background-size: cover;
+        }
+        .der {
+            height: 100%;
+            float: left;
+            width: 75%;
+            background-color: $negroFondo;
+            p {
+                color: $gris;
+                padding: 120px;
+                padding-left: 240px;
+                font-family: $fuenteNormal;
+                font-size: 20px;
+                font-weight: 200;
+            }
+        }
+    }
+    
+    .descripcion1::after {
+        content: '';
+        margin-top: -155px;
+        background-image: url('http://www.shoekahuna.com/wp-content/uploads/2017/10/3J235_shot2.png');
+        width: 600px;
+        height: 600px;
+        background-size: cover;
+        position: absolute;
+        left: 10px;
+        overflow-x: hidden;
+    }
+    
+    
+    
+    //DESCRIPCION 2
+    .descripcion2 {
+        height: 400px;
+        background-color: white;
+        h2 {
+            font-size: 40px;
+            padding-left: 175px;
+            padding-top: 100px;
+        }
+        .izq {
+            height: 100%;
+            float: left;
+            width: 70%;
+            background-color: white;
+            ul {
+                padding-left: 200px;
+                padding-top: 20px;
+                padding-right: 100px;
+            }
+            li {
+                color: black;
+                padding-left: 10px;
+                font-family: $fuenteNormal;
+                font-size: 20px;
+                font-weight: 200;
+            }
+        }
+        .der {
+            height: 100%;
+            float: left;
+            width: 30%; //background-color: yellow;
+            background-image: url("../img/descripcion2.png");
+            background-size: cover;
+        }
+
+        
+    } //DESCRIPCION 3
+    .descripcion3 {
+        height: 400px;
+        background-color: $negroFondo;
+        margin-bottom: 100px;
+        overflow-x: hidden;
+        h1 {
+            padding-top: 80px;
+        }
+        h2 {
+            color: $gris;
+            padding-left: 200px;
+        }
+        p {
+            color: $gris;
+            padding: 40px 200px;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            font-weight: 200;
+        }
+    }
+    .descripcion3::before {
+        content: '';
+        margin-top: -100px;
+        background-image: url('http://pluspng.com/img-png/converse-png--1200.png');
+        width: 600px;
+        height: 600px;
+        background-size: cover;
+        position: absolute;
+        left: -265px;
+        overflow-x: hidden;
+    }
+    .descripcion3::after {
+        content: '';
+        margin-top: -450px;
+        background-image: url('http://pluspng.com/img-png/converse-png--1200.png');
+        width: 600px;
+        height: 600px;
+        background-size: cover;
+        position: absolute;
+        right: -265px;
+        transform: scaleX(-1);
+        overflow-x: hidden;
+    }
+}
+
+//INTERACCION
+.interaccion {
+    height: 500px;
+    background-image: url("../img/interaccion.png");
+    background-size: cover;
+    margin-bottom: 40px;
+    .izq {
+        width: 35%;
+        height: 100%;
+        float: left;
+        h1 {
+            color: black;
+            padding-left: 150px;
+            padding-right: 0;
+            margin: 0;
+            font-weight: 700;
+        }
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 5px;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .column img:hover {
+            opacity: 1;
+        }
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .column img {
+            margin-top: 20px;
+            vertical-align: middle;
+            margin-left: 80px;
+        }
+        .personalizar {
+            transition: 0.5s;
+            border: 3px solid violet;
+            height: 56px;
+            width: 150px;
+            background-color: white;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            color: black;
+            margin-left: 5px;
+            display: block;
+            margin-top: 20px;
+            margin-left: 150px;
+        }
+        .personalizar:hover {
+            transition: 0.5s;
+            border: 3px solid white;
+            background-color: violet;
+            cursor: pointer;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .der {
+        width: 65%;
+        height: 100%;
+        float: left;
+        .turntable {
+            display: inline-block;
+            margin: 0px;
+        }
+        .turntable ul {
+            padding: 0px;
+            margin: 0px;
+            margin-left: -80px;
+        }
+        .turntable ul li {
+            list-style-type: none;
+            display: none;
+        }
+        .turntable ul li img {
+            width: 100%;
+        }
+        .turntable ul li.active {
+            display: block;
+        }
+    }
+}
+
+//COMPRA
+.detalles {
+    height: 700px;
+    .izq {
+        width: 50%;
+        height: 100%;
+        float: left;
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 16%;
+            padding: 5px;
+        }
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .column img:hover {
+            opacity: 1;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* The expanding image container */
+        .container {
+            //position: relative;
+            width: 86%;
+            height: 70%;
+            margin-left: 120px;
+        }
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 0px;
+            color: white;
+            font-size: 20px;
+        }
+    }
+    .der {
+        width: 50%;
+        height: 100%;
+        overflow-y: hidden; // hide vertical
+        overflow-x: hidden; // hide horizontal
+        h2 {
+            margin-top: 100px;
+        }
+        p {
+            color: $gris;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .Comprar {
+            transition: 0.5s;
+            border: 3px solid violet;
+            height: 56px;
+            width: 150px;
+            background-color: white;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            color: black;
+            margin-left: 5px;
+            display: block;
+            margin-top: 20px;
+        }
+        .Comprar:hover {
+            transition: 0.5s;
+            border: 3px solid black;
+            background-color: violet;
+            cursor: pointer;
+        }
+        .dropbtn {
+            transition: 0.5s;
+            border: 3px solid violet;
+            height: 56px;
+            width: 150px;
+            background-color: white;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            color: black;
+            margin-left: 5px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-family: $fuenteNormal;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            transition: 0.5s;
+            border: 3px solid black;
+            background-color: violet;
+            cursor: pointer;
+        }
+    }
+}
+
+//SUSCRIPCION
+.news {
+    height: 350px;
+    background-color: #1a1a1a; //text-align: center;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    p {
+        color: $gris;
+        padding-bottom: 20px;
+        font-family: $fuenteNormal;
+        font-size: 18px;
+        font-weight: 200;
+        padding-left: 200px;
+    }
+    form {
+        padding-left: 200px;
+        input[type=email] {
+            border: 3px solid white;
+            background-color: #1a1a1a;
+            height: 50px;
+            width: 500px;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            font-weight: 200;
+            padding-left: 30px;
+            color: white;
+        }
+        .enviar {
+            border: 3px solid white;
+            height: 56px;
+            width: 150px;
+            background-color: white;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            color: black;
+            margin-left: 5px;
+        }
+        .enviar:hover {
+            background-color: violet;
+            cursor: pointer;
+        }
+    }
+}
+
+.news::after {
+    content: '';
+    margin-top: -247px;
+    background-image: url('../img/suscri.png');
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    position: absolute;
+    left: -10px;
+}
+
+//PUBLICIDAD
+.promociones {
+    h1 {
+        color: black;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .menuGaleria11 {
+        height: 50px;
+    }
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+//FOOTER
+footer {
+    height: 150px;
+    margin-top: 20px;
+    align-items: flex-start;
+    //display: flex;
+    background-color: $negroFondo;
+
+
+    h1{
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    p{
+        font-family: $fuenteNormal;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+
+    a{
+        text-decoration: none;
+        text-decoration-line: none;
+        text-decoration-color: white;
+        color: white;
+    }
+
+    a:hover{
+        color:violet;
+    }
+
+    .flex-container {
+        margin-top: -200px;
+        height: 100%;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        vertical-align: top;
+        }
+    
+    .flex-item:nth-child(1) {
+        align-items: flex-start;
+        //background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 18px;
+
+        
+
+        -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+    .flex-item:nth-child(2) {
+        //background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 18px;
+
+        -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+}
+
+//MEDIAS----------------------------------------------------------------------------------------------------------
+@media screen and (max-width: 900px) {
+    * {
+        //overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        h1 {
+            font-size: 30px;
+            padding-left: 100px;
+            padding-top: 100px;
+        }
+        h2 {
+            font-weight: 200;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        h4 {
+            display: block;
+            font-size: 10px;
+        }
+    }
+    
+    nav {
+        height: 60px;
+        .izquierda {
+            float: left;
+            width: 80%;
+        }
+        .derecha {
+            width: 20%;
+            float: left;
+        }
+        p {
+            padding-top: 8px;
+            padding-bottom: 20px;
+            padding-left: 180px;
+            padding-right: 200px;
+            font-size: 30px;
+        }
+    }
+    
+    .banner {
+        #granim-canvas {
+            height: calc(60vh - 60px);
+        }
+    
+        img{
+            margin-top: -260px;
+            right: 20%;
+        }
+    }
+    
+    //GALERIA
+    .galeria {
+        h1 {
+            color: black;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        .menuGaleria11 {
+            height: 240px;
+        }
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    
+    //DESCRIPCION
+    .descripcion {
+        overflow-x: hidden;
+        .logo {
+            padding-top: 80px;
+            height: 170px;
+            padding-left: 100px;
+        }
+        h2 {
+            padding-left: 10px;
+            margin-top: -10px;
+        } //DESCRIPCION 1
+        .descripcion1 {
+            height: 300px;
+            background-color: black;
+            .izq {
+                height: 100%;
+                float: left;
+                width: 15%;
+                background-image: url("../img/holographic.png");
+                background-size: cover;
+            }
+            .der {
+                height: 100%;
+                float: left;
+                width: 85%;
+                background-color: $negroFondo;
+                p {
+                    color: $gris;
+                    padding: 80px;
+                    padding-left: 240px;
+                    font-family: $fuenteNormal;
+                    font-size: 16px;
+                    font-weight: 200;
+                }
+            }
+        }
+        
+        .descripcion1::after {
+            content: '';
+            margin-top: -155px;
+            background-image: url('http://www.shoekahuna.com/wp-content/uploads/2017/10/3J235_shot2.png');
+            width: 500px;
+            height: 500px;
+            background-size: cover;
+            position: absolute;
+            left: -100px;
+            overflow-x: hidden;
+        }
+        
+        
+        
+        //DESCRIPCION 2
+        .descripcion2 {
+            height: 300px;
+            background-color: white;
+            h2 {
+                font-size: 30px;
+                padding-left: 100px;
+                padding-top: 60px;
+            }
+            .izq {
+                height: 100%;
+                float: left;
+                width: 70%;
+                background-color: white;
+                ul {
+                    padding-left: 100px;
+                    padding-top: 20px;
+                    padding-right: 100px;
+                }
+                li {
+                    padding-left: 10px;
+                    font-size: 16px;
+                    font-weight: 200;
+                }
+            }
+            .der {
+                height: 100%;
+                float: left;
+                width: 30%; //background-color: yellow;
+                background-image: url("../img/descripcion2.png");
+                background-size: cover;
+            }
+    
+            
+        } //DESCRIPCION 3
+        .descripcion3 {
+            height: 300px;
+            margin-bottom: 100px;
+            overflow-x: hidden;
+            h1 {
+                padding-top: 60px;
+            }
+            h2 {
+                padding-left: 100px;
+            }
+            p {
+                padding: 20px 100px;
+                font-size: 16px;
+            }
+        }
+        .descripcion3::before {
+            content: '';
+            margin-top: -100px;
+            background-image: url('http://pluspng.com/img-png/converse-png--1200.png');
+            width: 500px;
+            height: 500px;
+            left: -265px;
+            overflow-x: hidden;
+        }
+        .descripcion3::after {
+            content: '';
+            margin-top: -350px;
+            background-image: url('http://pluspng.com/img-png/converse-png--1200.png');
+            width: 500px;
+            height: 500px;
+            background-size: cover;
+            position: absolute;
+            right: -265px;
+            transform: scaleX(-1);
+            overflow-x: hidden;
+        }
+    }
+    
+    //INTERACCION
+    .interaccion {
+        height: 400px;
+        background-image: url("../img/interaccion.png");
+        background-size: cover;
+        margin-bottom: 40px;
+        .izq {
+            width: 35%;
+            height: 100%;
+            float: left;
+            h1 {
+                padding-left: 150px;
+                padding-right: 0;
+                margin: 0;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 5px;
+                justify-content: center;
+            }
+            /* Style the images inside the grid */
+            .column img {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+            /* Create four equal columns that sits next to each other */
+            .column {
+                -ms-flex: 25%;
+                /* IE10 */
+                flex: 25%;
+                max-width: 25%;
+                padding: 0 4px;
+            }
+            .column img {
+                margin-top: 20px;
+                vertical-align: middle;
+                margin-left: 80px;
+            }
+            .personalizar {
+                border: 3px solid violet;
+                height: 56px;
+                width: 150px;
+                font-size: 20px;
+                margin-left: 5px;
+                display: block;
+                margin-top: 20px;
+                margin-left: 150px;
+            }
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 800px) {
+                .column {
+                    -ms-flex: 50%;
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        .der {
+            width: 65%;
+            height: 100%;
+            float: left;
+            .turntable {
+                display: inline-block;
+                margin: 0px;
+            }
+            .turntable ul {
+                padding: 0px;
+                margin: 0px;
+                margin-left: -80px;
+            }
+            .turntable ul li {
+                list-style-type: none;
+                display: none;
+            }
+            .turntable ul li img {
+                width: 100%;
+            }
+            .turntable ul li.active {
+                display: block;
+            }
+        }
+    }
+    
+    //COMPRA
+    .detalles {
+        height: 500px;
+        .izq {
+            width: 50%;
+            height: 100%;
+            float: left;
+            /* The grid: Four equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 16%;
+                padding: 5px;
+            }
+            /* Style the images inside the grid */
+            .column img {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+            .column img:hover {
+                opacity: 1;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* The expanding image container */
+            .container {
+                //position: relative;
+                width: 92%;
+                height: 70%;
+                margin-left: 80px;
+            }
+            /* Expanding image text */
+            #imgtext {
+                position: absolute;
+                bottom: 15px;
+                left: 0px;
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .der {
+            width: 50%;
+            height: 100%;
+
+            h2 {
+                margin-top: 30px;
+            }
+            p {
+                font-size: 20px;
+            }
+            .Comprar {
+                border: 3px solid violet;
+                height: 56px;
+                width: 150px;
+                font-size: 20px;
+                margin-left: 5px;
+                display: block;
+                margin-top: 20px;
+            }
+            .dropbtn {
+                border: 3px solid violet;
+                height: 56px;
+                width: 150px;
+                background-color: white;
+                font-size: 20px;
+                margin-left: 5px;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-family: $fuenteNormal;
+            }
+        }
+    }
+    
+    //SUSCRIPCION
+    .news {
+        height: 350px;
+        padding-left: 60px;
+        margin-bottom: 50px;
+
+        h1{
+            margin-left:60px; 
+            font-size: 25px;
+        }
+        p {
+            padding-bottom: 16px;
+            font-size: 18px;
+            padding-left: 160px;
+        }
+        form {
+            padding-left: 160px;
+            input[type=email] {
+                border: 3px solid white;
+                height: 50px;
+                width: 400px;
+                font-size: 16px;
+                padding-left: 10px;
+            }
+            .enviar {
+                border: 3px solid white;
+                height: 56px;
+                width: 100px;
+                font-size: 16px;
+                margin-left: 5px;
+            }
+        }
+    }
+    
+    .news::after {
+        content: '';
+        margin-top: -225px;
+        background-image: url('../img/suscri.png');
+        width: 250px;
+        height: 300px;
+        background-size: cover;
+        position: absolute;
+        left: -60px;
+    }
+    
+    //FOOTER
+    footer {
+        height: 150px;
+        align-items: flex-start;
+       
+        h1{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+    
+        p{
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+        }
+    
+        a{
+            text-decoration: none;
+            text-decoration-line: none;
+            text-decoration-color: white;
+        }
+    
+        .flex-container {
+            margin-top: -200px;
+            height: 100%;
+            display: flex;
+            }
+        
+        .flex-item:nth-child(1) {
+            align-items: flex-start;
+            //background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 18px;
+    
+        }
+        .flex-item:nth-child(2) {
+            //background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 18px;
+        }
+    }
+}
+
+//MEDIAS 600----------------------------------------------------------------------------------------------------------
+@media screen and (max-width: 600px) {
+    * {
+        //overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        h1 {
+            font-size: 30px;
+            padding-left: 100px;
+            padding-top: 100px;
+        }
+        h2 {
+            font-weight: 200;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        h4 {
+            display: block;
+            font-size: 10px;
+        }
+    }
+    
+    nav {
+        .izquierda {
+            float: left;
+            width: 80%;
+        }
+        .derecha {
+            width: 20%;
+            float: left;
+        }
+        p {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding-top: 8px;
+            padding-bottom: 20px;
+            padding-left: 100px;
+            padding-right: 200px;
+            font-family: $fuenteRARA;
+            font-size: 25px;
+        }
+        button {
+            display:none;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px 16px;
+            text-decoration: none;
+            font-family: $fuenteNormal;
+        }
+        input {
+            display: none;
+        }
+    }
+    
+    .banner {
+        #granim-canvas {
+            display: block;
+            width: 100%;
+            min-width: 200px;
+            height: calc(50vh - 50px);
+            min-height: 100px; //margin: 50px;
+        }
+    
+        img{
+            position: absolute;
+            margin-top: -260px;
+            right: 2%;
+            width: 60%;
+        }
+    }
+    
+    //GALERIA
+    .galeria {
+        h1 {
+            color: black;
+            font-weight: 700;
+            margin-bottom: 30px;
+            margin-top: -30px;
+        }
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        .menuGaleria11 {
+            height: 240px;
+        }
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    
+    //DESCRIPCION
+    .descripcion {
+        overflow-x: hidden;
+        .logo {
+            padding-top: 80px;
+            height: 150px;
+            padding-left: 20px;
+        }
+        h2 {
+            padding-left: 10px;
+            margin-top: -10px;
+        } //DESCRIPCION 1
+        .descripcion1 {
+            height: 260px;
+            .izq {
+                height: 100%;
+                float: left;
+                width: 15%;
+                background-image: url("../img/holographic.png");
+                background-size: cover;
+            }
+            .der {
+                height: 100%;
+                float: left;
+                width: 85%;
+                background-color: $negroFondo;
+                p {
+                    color: $gris;
+                    padding: 40px;
+                    padding-left: 100px;
+                    font-family: $fuenteNormal;
+                    font-size: 15px;
+                    font-weight: 200;
+                }
+            }
+        }
+        
+        .descripcion1::after {
+            content: '';
+            margin-top: -105px;
+            background-image: url('http://www.shoekahuna.com/wp-content/uploads/2017/10/3J235_shot2.png');
+            width: 400px;
+            height: 400px;
+            background-size: cover;
+            position: absolute;
+            left: -180px;
+            overflow-x: hidden;
+        }
+        
+        
+        
+        //DESCRIPCION 2
+        .descripcion2 {
+            height: 300px;
+            background-color: white;
+            h2 {
+                font-size: 30px;
+                padding-left: 60px;
+                padding-top: 40px;
+            }
+            .izq {
+                height: 100%;
+                float: left;
+                width: 80%;
+                background-color: white;
+                ul {
+                    padding-left: 80px;
+                    padding-top: 18px;
+                    padding-right: 30px;
+                }
+                li {
+                    padding-left: 10px;
+                    font-size: 15px;
+                    font-weight: 200;
+                }
+            }
+            .der {
+                height: 100%;
+                float: left;
+                width: 20%; //background-color: yellow;
+                background-image: url("../img/descripcion2.png");
+                background-size: cover;
+            }
+    
+            
+        } //DESCRIPCION 3
+        .descripcion3 {
+            height: 350px;
+            margin-bottom: 100px;
+            overflow-x: hidden;
+            h1 {
+                padding-top: 40px;
+                padding-left: 60px;
+            }
+            h2 {
+                padding-left: 60px;
+            }
+            p {
+                padding: 20px 60px;
+                font-size: 16px;
+            }
+        }
+        .descripcion3::before {
+            content: '';
+            display: none;
+        }
+        .descripcion3::after {
+            content: '';
+            margin-top: -350px;
+            background-image: url('http://pluspng.com/img-png/converse-png--1200.png');
+            width: 500px;
+            height: 500px;
+            background-size: cover;
+            position: absolute;
+            right: -265px;
+            transform: scaleX(-1);
+            overflow-x: hidden;
+        }
+    }
+    
+    //INTERACCION
+    .interaccion {
+        height: 400px;
+        background-image: url("../img/interaccion.png");
+        background-size: cover;
+        margin-bottom: 40px;
+        .izq {
+            width: 35%;
+            height: 100%;
+            float: left;
+            h1 {
+                padding-left: 100px;
+                padding-top: 30px;
+                padding-right: 0;
+                margin: 0;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 5px;
+                justify-content: center;
+            }
+            /* Style the images inside the grid */
+            .column img {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+            /* Create four equal columns that sits next to each other */
+            .column {
+                display: none;
+            }
+            .column img {
+                margin-top: 20px;
+                vertical-align: middle;
+                margin-left: 80px;
+            }
+            .personalizar {
+                border: 3px solid violet;
+                height: 56px;
+                width: 150px;
+                font-size: 20px;
+                margin-left: 5px;
+                display: block;
+                margin-top: 220px;
+                margin-left: 180px;
+            }
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 800px) {
+                .column {
+                    -ms-flex: 50%;
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        .der {
+            width: 65%;
+            height: 100%;
+            float: left;
+            .turntable {
+                display: inline-block;
+                margin: 0px;
+            }
+            .turntable ul {
+                padding: 0px;
+                margin: 0px;
+                margin-top: 150px;
+                margin-left: -140px;
+            }
+            .turntable ul li {
+                list-style-type: none;
+                display: none;
+            }
+            .turntable ul li img {
+                width: 100%;
+            }
+            .turntable ul li.active {
+                display: block;
+            }
+        }
+    }
+    
+    //COMPRA
+    .detalles {
+        height: 500px;
+        .izq {
+            width: 50%;
+            height: 100%;
+            float: left;
+            /* The grid: Four equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 16%;
+                padding: 5px;
+            }
+            /* Style the images inside the grid */
+            .column img {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+            .column img:hover {
+                opacity: 1;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* The expanding image container */
+            .container {
+                //position: relative;
+                width: 92%;
+                height: 70%;
+                margin-left: 80px;
+            }
+            /* Expanding image text */
+            #imgtext {
+                position: absolute;
+                bottom: 15px;
+                left: 0px;
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .der {
+            width: 50%;
+            height: 100%;
+
+            h2 {
+                margin-top: 30px;
+            }
+            p {
+                font-size: 20px;
+            }
+            .Comprar {
+                border: 3px solid violet;
+                height: 56px;
+                width: 150px;
+                font-size: 20px;
+                margin-left: 5px;
+                display: block;
+                margin-top: 20px;
+            }
+            .dropbtn {
+                border: 3px solid violet;
+                height: 56px;
+                width: 150px;
+                background-color: white;
+                font-size: 20px;
+                margin-left: 5px;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-family: $fuenteNormal;
+            }
+        }
+    }
+    
+    //SUSCRIPCION
+    .news {
+        height: 350px;
+        padding-left: 60px;
+        margin-bottom: 50px;
+
+        h1{
+            margin-left:60px; 
+            font-size: 25px;
+        }
+        p {
+            padding-bottom: 16px;
+            font-size: 18px;
+            padding-left: 160px;
+        }
+        form {
+            padding-left: 160px;
+            input[type=email] {
+                border: 3px solid white;
+                height: 50px;
+                width: 400px;
+                font-size: 16px;
+                padding-left: 10px;
+            }
+            .enviar {
+                border: 3px solid white;
+                height: 56px;
+                width: 100px;
+                font-size: 16px;
+                margin-left: 5px;
+            }
+        }
+    }
+    
+    .news::after {
+        content: '';
+        margin-top: -225px;
+        background-image: url('../img/suscri.png');
+        width: 250px;
+        height: 300px;
+        background-size: cover;
+        position: absolute;
+        left: -60px;
+    }
+    
+    //FOOTER
+    footer {
+        height: 150px;
+        align-items: flex-start;
+       
+        h1{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+    
+        p{
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+        }
+    
+        a{
+            text-decoration: none;
+            text-decoration-line: none;
+            text-decoration-color: white;
+        }
+    
+        .flex-container {
+            margin-top: -200px;
+            height: 100%;
+            display: flex;
+            }
+        
+        .flex-item:nth-child(1) {
+            align-items: flex-start;
+            //background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 18px;
+    
+        }
+        .flex-item:nth-child(2) {
+            //background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 18px;
+        }
+    }
+}
+

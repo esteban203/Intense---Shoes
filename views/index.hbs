@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intense Converse</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <section class="navegacion">
+        <nav>
+            <ul class="navegacion-menu">
+                <li class="global">
+                    <p>INTENSE</p>
+                </li>
+                <li class="global">
+                    <a href="/home">HOME</a>
+                </li>
+                <li class="global">
+                    <a href="/">Tienda</a>
+                </li>
+                <li class="global">
+                    <a href="#">
+                        Nosotros
+                    </a>
+                </li>
+                <li class="global">
+                    <a href="#">Contacto</a>
+                </li>
+
+            </ul>
+
+            <input type="search" placeholder="Buscar" class="buscarNavegador">
+            <button type="button" class="buscar">
+                <img src="https://www.iconsdb.com/icons/preview/black/search-13-xxl.png" alt="" style="vertical-align: middle; width:15px">
+            </button>
+            <a href="/checkout">
+                <button type="button">
+                    <img src="https://www.iconsdb.com/icons/preview/white/cart-73-xxl.png" alt="" style="vertical-align: middle; width:15px">
+                    <span class="carrito">0</span>
+                </button>
+            </a>
+        </nav>
+    </section>
+
+
+    <section class="banner">
+    </section>
+    <div class="tituloCarrito">
+                <h1>Tienda</h1>
+            </div>
+
+    <section class="filtros">
+        <h1>Filtros</h1>
+        <div class="filtro">
+            <div class="filtro1">
+                <h2>Color:</h2>
+                <a class="botonBlanco" href="/?color=blanco"></a>
+                <a class="botonNegro" href="/?color=negro"></a>
+                <a class="botonRojo" href="/?color=rojo"></a>
+                <a class="botonMiel" href="/?color=miel"></a>
+            </div>
+
+            <div class="filtro2">
+                <h2>Categoria:</h2>
+                <div class="dropdown">
+                    <button class="dropbtn">Todas</button>
+                    <div class="dropdown-content">
+                        <a href="/?categoria=urbano">Urbano</a>
+                        <a href="/?categoria=SlipOn">Slip on</a>
+                        <a href="/?categoria=botin">Botin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filtro3">
+                <h2>Marca:</h2>
+                <div class="dropdown">
+                    <button class="dropbtn">Todas</button>
+                    <div class="dropdown-content">
+                        <a href="/?marca=Converse">Converse</a>
+                        <a href="/?marca=Bershka">Bershka</a>
+                        <a href="/?marca=MangoTango">Mango</a>
+                        <a href="/?marca=Vans">Vans</a>
+                    </div>
+                </div>
+            </div>
+
+            
+    </section>
+
+    <section class="productos">
+        <div class="zapatos">
+            <div class="mostrar">
+                {{#each zapatos}}
+                    <div class="zapato" data-id="{{this._id}}">
+                        <a href="/producto/{{modelo}}">
+                        <div class="imagen" style="background-image: url({{link}});">
+                            <div class="descri">
+                                <p class="nom">
+                                    <b>{{modelo}}</b>
+                                </p>
+                                <p class="desc">
+                                    Marca: {{marca}}
+                                </p>
+                                <p class="desc">
+                                    Precio: ${{precio}}
+                                </p>
+                            </div>
+
+                        </div>
+                        </a>
+                        <div>
+                            <button class="agregar" id="comprar">
+                                <img src="https://www.iconsdb.com/icons/preview/white/cart-43-xxl.png" alt="" style="vertical-align: middle; width:15px">
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h1>INTENSE</h1>
+                <p>Plataforma de venta de calzado femenino.</p>
+                <br>
+                <p>
+                    <a href="#">
+                        <b>Condiciones</b>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <b>Soporte</b>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <b>Privacidad</b>
+                    </a>
+                </p>
+            </div>
+            <div class="flex-item">
+                <h1>SÍGUENOS</h1>
+                <p>Mantente al tanto de las novedades.</p>
+                <br>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cliente.js"></script>
+    <script src="js/productos.js"></script>
+
+</body>
+
+</html>

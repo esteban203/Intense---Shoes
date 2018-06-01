@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intense Converse</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+
+<body>
+
+    <section class="navegacion">
+        <nav>
+            <ul class="navegacion-menu">
+                <li class="global">
+                    <p>INTENSE</p>
+                </li>
+                <li class="global">
+                    <a href="/home">HOME</a>
+                </li>
+                <li class="global">
+                    <a href="/">Tienda</a>
+                </li>
+                <li class="global">
+                    <a href="#">
+                        Nosotros
+                    </a>
+                </li>
+                <li class="global">
+                    <a href="#">Contacto</a>
+                </li>
+
+            </ul>
+
+            <input type="search" placeholder="Buscar" class="buscarNavegador">
+            <button type="button" class="buscar">
+                <img src="https://www.iconsdb.com/icons/preview/black/search-13-xxl.png" alt="" style="vertical-align: middle; width:15px">
+            </button>
+
+            <button type="button" class="carrito">
+                <img src="https://www.iconsdb.com/icons/preview/white/cart-73-xxl.png" alt="" style="vertical-align: middle; width:15px">
+            </button>
+        </nav>
+    </section>
+
+   
+    <section class="banner2" style="background-image: url({{modelos.imagenCat}});"></section>
+
+    <section class="detalles">
+        <div class="izq">
+            <div class="imagenPrincipal">
+                <img src="" alt="">
+            </div>
+            <!-- The four columns -->
+            <div class="row">
+                <div class="column">
+                </div>
+                <div class="column" style="background-image: url({{modelos.link}})" onclick="myFunction('{{modelos.link}}');">
+                    <img src="{{modelos.link}}">    
+                </div>
+                <div class="column" style="background-image: url({{modelos.vista1}})" onclick="myFunction('{{modelos.vista1}}');">    
+                </div>
+                <div class="column" style="background-image: url({{modelos.vista2}})" onclick="myFunction('{{modelos.vista2}}');">    
+                </div>
+                <div class="column" style="background-image: url({{modelos.vista3}})" onclick="myFunction('{{modelos.vista3}}');">    
+                </div>
+            </div>
+
+            <div class="container">
+                <img id="expandedImg" src="{{modelos.vista3}}" style="width:78%">
+            </div>
+        </div>
+        <div class="der">
+            <h2>{{modelos.modelo}}</h2>
+            <h3>{{modelos.marca}}</h3>
+            <p>${{modelos.precio}}</p>
+            </br>
+            <h3>Categoria: {{modelos.categoria}}</h3>
+            <p>Código: {{modelos.codigo}}</p>
+            </br>
+            <h4>Descripción:</h4>
+            <p>{{modelos.descripcion}}</p>
+            </br>
+
+            <div class="dropdown">
+                <button class="dropbtn">Tallas</button>
+                <div class="dropdown-content">
+                    <a href="#">34</a>
+                    <a href="#">35</a>
+                    <a href="#">36</a>
+                    <a href="#">37</a>
+                    <a href="#">38</a>
+                    <a href="#">39</a>
+                    <a href="#">40</a>
+                    <a href="#">41</a>
+                    <a href="#">42</a>
+                    <a href="#">43</a>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+ 
+</body>
+
+<script>
+    function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    expandImg.src = imgs;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+
+<footer>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h1>INTENSE</h1>
+            <p>Plataforma de venta de calzado femenino.</p>
+            <br>
+            <p>
+                <a href="#"><b>Condiciones</b></a>
+            </p>
+            <p>
+                <a href="#"><b>Soporte</b></a>
+            </p>
+            <p>
+                <a href="#"><b>Privacidad</b></a>
+            </p>
+        </div>
+        <div class="flex-item">
+            <h1>SÍGUENOS</h1>
+            <p>Mantente al tanto de las novedades.</p>
+            <br>
+        </div>
+    </div>
+</footer>
+
+</html>

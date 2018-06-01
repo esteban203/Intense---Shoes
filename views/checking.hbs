@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intense Converse</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <section class="banner3" style="background-image: url(https://images.unsplash.com/photo-1495936387332-f28b44e85bfd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=519a761c1bd61240d75b42722ee8e879&auto=format&fit=crop&w=1950&q=80);"></section>
+
+    <section class="navegacion">
+        <nav>
+            <ul class="navegacion-menu">
+                <li class="global">
+                    <p>INTENSE</p>
+                </li>
+                <li class="global">
+                    <a href="/home">HOME</a>
+                </li>
+                <li class="global">
+                    <a href="/">Tienda</a>
+                </li>
+                <li class="global">
+                    <a href="#">
+                        Nosotros
+                    </a>
+                </li>
+                <li class="global">
+                    <a href="#">Contacto</a>
+                </li>
+
+            </ul>
+
+            <input type="search" placeholder="Buscar" class="buscarNavegador">
+            <button type="button" class="buscar">
+                <img src="https://www.iconsdb.com/icons/preview/black/search-13-xxl.png" alt="" style="vertical-align: middle; width:15px">
+            </button>
+
+            <a href="/checkout">
+                <button type="button">
+                    <img src="https://www.iconsdb.com/icons/preview/white/cart-73-xxl.png" alt="" style="vertical-align: middle; width:15px">
+                    <span class="carrito">0</span>
+                </button>
+            </a>
+        </nav>
+    </section>
+
+    <div class="Zapatitos">
+        <div class="informacion">
+            <div class="tituloCarrito">
+                <h1>Carrito</h1>
+            </div>
+
+            <div class="padre">
+                <div class="carrito">
+                    <ul class="lista"></ul>
+                </div>
+
+                <div class="Formulario">
+                    <div id="container">
+                        <h1>&bull; Compra &bull;</h1>
+                        <form action="#" method="post" id="contact_form">
+                            <div class="name">
+                                <label for="name"></label>
+                                <input type="text" placeholder="Nombre" name="name" id="name_input" required>
+                            </div>
+                            <div class="email">
+                                <label for="email"></label>
+                                <input type="email" placeholder="e-mail" name="email" id="email_input" required>
+                            </div>
+                            <div class="telephone">
+                                <label for="name"></label>
+                                <input type="text" placeholder="Telefono" name="telephone" id="telephone_input" required>
+                            </div>
+                            <div class="telephone">
+                                <label for="name"></label>
+                                <input type="text" placeholder="Direccion" name="telephone" id="telephone_input" required>
+                            </div>
+                            <div class="subject">
+                                <label for="subject"></label>
+                                <select placeholder="Modo de pago" name="subject" id="subject_input" required>
+                                    <option disabled hidden selected>Modo de pago</option>
+                                    <option>Entrega a domicilio</option>
+                                    <option>Tarjeta de Credito</option>
+                                    <option>Consignación</option>
+                                </select>
+                            </div>
+                            <div class="message">
+                                <label for="message"></label>
+                                <textarea name="message" placeholder="Comentarios" id="message_input" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Comprar" id="form_button" />
+                            </div>
+                        </form>
+                        <!-- // End form -->
+                    </div>
+                    <!-- // End #container -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h1>INTENSE</h1>
+                <p>Plataforma de venta de calzado femenino.</p>
+                <br>
+                <p>
+                    <a href="#">
+                        <b>Condiciones</b>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <b>Soporte</b>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <b>Privacidad</b>
+                    </a>
+                </p>
+            </div>
+            <div class="flex-item">
+                <h1>SÍGUENOS</h1>
+                <p>Mantente al tanto de las novedades.</p>
+                <br>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cliente.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>
