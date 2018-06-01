@@ -1,0 +1,1800 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* h1 {
+  display: block;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  padding-left: 200px;
+  padding-top: 100px;
+  font-weight: 600;
+}
+
+* h2 {
+  display: block;
+  color: black;
+  font-weight: 200;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+* h3 {
+  display: block;
+  color: black;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+* h4 {
+  display: block;
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+nav .izquierda {
+  float: left;
+  width: 80%;
+}
+
+nav .derecha {
+  width: 20%;
+  float: left;
+}
+
+nav p {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  padding-left: 180px;
+  padding-right: 200px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+}
+
+nav button {
+  transition: 0.5s;
+  display: block;
+  background-color: #eca5e3;
+  text-align: center;
+  margin: 15px 0 18px 0px;
+  padding: 5px 5px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav button img {
+  background-size: cover;
+}
+
+nav button:hover {
+  background-color: #f881bc;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s;
+}
+
+nav li a:hover {
+  background-color: #eca5e3;
+  transition: 0.5s;
+}
+
+nav input {
+  height: 27px;
+  width: 250px;
+  border: none;
+  font-size: 14px;
+  padding: 7px 5px 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin: 15px 0 15px 25px;
+}
+
+.banner #granim-canvas {
+  display: block;
+  width: 100%;
+  min-width: 200px;
+  height: calc(90vh - 90px);
+  min-height: 100px;
+}
+
+.banner img {
+  position: absolute;
+  margin-top: -400px;
+  right: 30%;
+}
+
+.galeria {
+  /* Create four equal columns that sits next to each other */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+}
+
+.galeria h1 {
+  color: black;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.galeria .row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.galeria .menuGaleria11 {
+  height: 240px;
+}
+
+.galeria .column {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.galeria .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+  .galeria .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .galeria .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.descripcion {
+  overflow-x: hidden;
+}
+
+.descripcion .logo {
+  padding-top: 80px;
+  height: 170px;
+  padding-left: 200px;
+}
+
+.descripcion h2 {
+  padding-left: 10px;
+  margin-top: -10px;
+}
+
+.descripcion .descripcion1 {
+  height: 400px;
+  background-color: black;
+}
+
+.descripcion .descripcion1 .izq {
+  height: 100%;
+  float: left;
+  width: 25%;
+  background-image: url("../img/holographic.png");
+  background-size: cover;
+}
+
+.descripcion .descripcion1 .der {
+  height: 100%;
+  float: left;
+  width: 75%;
+  background-color: #1a1a1a;
+}
+
+.descripcion .descripcion1 .der p {
+  color: #999598;
+  padding: 120px;
+  padding-left: 240px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.descripcion .descripcion1::after {
+  content: '';
+  margin-top: -155px;
+  background-image: url("http://www.shoekahuna.com/wp-content/uploads/2017/10/3J235_shot2.png");
+  width: 600px;
+  height: 600px;
+  background-size: cover;
+  position: absolute;
+  left: 10px;
+  overflow-x: hidden;
+}
+
+.descripcion .descripcion2 {
+  height: 400px;
+  background-color: white;
+}
+
+.descripcion .descripcion2 h2 {
+  font-size: 40px;
+  padding-left: 175px;
+  padding-top: 100px;
+}
+
+.descripcion .descripcion2 .izq {
+  height: 100%;
+  float: left;
+  width: 70%;
+  background-color: white;
+}
+
+.descripcion .descripcion2 .izq ul {
+  padding-left: 200px;
+  padding-top: 20px;
+  padding-right: 100px;
+}
+
+.descripcion .descripcion2 .izq li {
+  color: black;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.descripcion .descripcion2 .der {
+  height: 100%;
+  float: left;
+  width: 30%;
+  background-image: url("../img/descripcion2.png");
+  background-size: cover;
+}
+
+.descripcion .descripcion3 {
+  height: 400px;
+  background-color: #1a1a1a;
+  margin-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.descripcion .descripcion3 h1 {
+  padding-top: 80px;
+}
+
+.descripcion .descripcion3 h2 {
+  color: #999598;
+  padding-left: 200px;
+}
+
+.descripcion .descripcion3 p {
+  color: #999598;
+  padding: 40px 200px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.descripcion .descripcion3::before {
+  content: '';
+  margin-top: -100px;
+  background-image: url("http://pluspng.com/img-png/converse-png--1200.png");
+  width: 600px;
+  height: 600px;
+  background-size: cover;
+  position: absolute;
+  left: -265px;
+  overflow-x: hidden;
+}
+
+.descripcion .descripcion3::after {
+  content: '';
+  margin-top: -450px;
+  background-image: url("http://pluspng.com/img-png/converse-png--1200.png");
+  width: 600px;
+  height: 600px;
+  background-size: cover;
+  position: absolute;
+  right: -265px;
+  transform: scaleX(-1);
+  overflow-x: hidden;
+}
+
+.interaccion {
+  height: 500px;
+  background-image: url("../img/interaccion.png");
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+.interaccion .izq {
+  width: 35%;
+  height: 100%;
+  float: left;
+  /* Style the images inside the grid */
+  /* Create four equal columns that sits next to each other */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+}
+
+.interaccion .izq h1 {
+  color: black;
+  padding-left: 150px;
+  padding-right: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.interaccion .izq .row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 5px;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.interaccion .izq .column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.interaccion .izq .column img:hover {
+  opacity: 1;
+}
+
+.interaccion .izq .column {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.interaccion .izq .column img {
+  margin-top: 20px;
+  vertical-align: middle;
+  margin-left: 80px;
+}
+
+.interaccion .izq .personalizar {
+  transition: 0.5s;
+  border: 3px solid violet;
+  height: 56px;
+  width: 150px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+  display: block;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.interaccion .izq .personalizar:hover {
+  transition: 0.5s;
+  border: 3px solid white;
+  background-color: violet;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .interaccion .izq .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .interaccion .izq .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.interaccion .der {
+  width: 65%;
+  height: 100%;
+  float: left;
+}
+
+.interaccion .der .turntable {
+  display: inline-block;
+  margin: 0px;
+}
+
+.interaccion .der .turntable ul {
+  padding: 0px;
+  margin: 0px;
+  margin-left: -80px;
+}
+
+.interaccion .der .turntable ul li {
+  list-style-type: none;
+  display: none;
+}
+
+.interaccion .der .turntable ul li img {
+  width: 100%;
+}
+
+.interaccion .der .turntable ul li.active {
+  display: block;
+}
+
+.detalles {
+  height: 700px;
+}
+
+.detalles .izq {
+  width: 50%;
+  height: 100%;
+  float: left;
+  /* The grid: Four equal columns that floats next to each other */
+  /* Style the images inside the grid */
+  /* Clear floats after the columns */
+  /* The expanding image container */
+  /* Expanding image text */
+}
+
+.detalles .izq .column {
+  float: left;
+  width: 16%;
+  padding: 5px;
+}
+
+.detalles .izq .column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.detalles .izq .column img:hover {
+  opacity: 1;
+}
+
+.detalles .izq .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.detalles .izq .container {
+  width: 86%;
+  height: 70%;
+  margin-left: 120px;
+}
+
+.detalles .izq #imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  color: white;
+  font-size: 20px;
+}
+
+.detalles .der {
+  width: 50%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.detalles .der h2 {
+  margin-top: 100px;
+}
+
+.detalles .der p {
+  color: #999598;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.detalles .der .Comprar {
+  transition: 0.5s;
+  border: 3px solid violet;
+  height: 56px;
+  width: 150px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+  display: block;
+  margin-top: 20px;
+}
+
+.detalles .der .Comprar:hover {
+  transition: 0.5s;
+  border: 3px solid black;
+  background-color: violet;
+  cursor: pointer;
+}
+
+.detalles .der .dropbtn {
+  transition: 0.5s;
+  border: 3px solid violet;
+  height: 56px;
+  width: 150px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+}
+
+.detalles .der .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.detalles .der .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+
+.detalles .der .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.detalles .der .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.detalles .der .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.detalles .der .dropdown:hover .dropbtn {
+  transition: 0.5s;
+  border: 3px solid black;
+  background-color: violet;
+  cursor: pointer;
+}
+
+.news {
+  height: 350px;
+  background-color: #1a1a1a;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+
+.news p {
+  color: #999598;
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  padding-left: 200px;
+}
+
+.news form {
+  padding-left: 200px;
+}
+
+.news form input[type=email] {
+  border: 3px solid white;
+  background-color: #1a1a1a;
+  height: 50px;
+  width: 500px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  padding-left: 30px;
+  color: white;
+}
+
+.news form .enviar {
+  border: 3px solid white;
+  height: 56px;
+  width: 150px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+}
+
+.news form .enviar:hover {
+  background-color: violet;
+  cursor: pointer;
+}
+
+.news::after {
+  content: '';
+  margin-top: -247px;
+  background-image: url("../img/suscri.png");
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  position: absolute;
+  left: -10px;
+}
+
+.promociones {
+  /* Create four equal columns that sits next to each other */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+}
+
+.promociones h1 {
+  color: black;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.promociones .row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.promociones .menuGaleria11 {
+  height: 50px;
+}
+
+.promociones .column {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.promociones .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+  .promociones .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .promociones .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+footer {
+  height: 150px;
+  margin-top: 20px;
+  align-items: flex-start;
+  background-color: #1a1a1a;
+}
+
+footer h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-color: white;
+  color: white;
+}
+
+footer a:hover {
+  color: violet;
+}
+
+footer .flex-container {
+  margin-top: -200px;
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  vertical-align: top;
+}
+
+footer .flex-item:nth-child(1) {
+  align-items: flex-start;
+  margin: 10px;
+  padding: 20px;
+  font-size: 18px;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+footer .flex-item:nth-child(2) {
+  margin: 10px;
+  padding: 20px;
+  font-size: 18px;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+@media screen and (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  * h1 {
+    font-size: 30px;
+    padding-left: 100px;
+    padding-top: 100px;
+  }
+  * h2 {
+    font-weight: 200;
+    font-size: 20px;
+  }
+  * h3 {
+    font-size: 15px;
+  }
+  * h4 {
+    display: block;
+    font-size: 10px;
+  }
+  nav {
+    height: 60px;
+  }
+  nav .izquierda {
+    float: left;
+    width: 80%;
+  }
+  nav .derecha {
+    width: 20%;
+    float: left;
+  }
+  nav p {
+    padding-top: 8px;
+    padding-bottom: 20px;
+    padding-left: 180px;
+    padding-right: 200px;
+    font-size: 30px;
+  }
+  .banner #granim-canvas {
+    height: calc(60vh - 60px);
+  }
+  .banner img {
+    margin-top: -260px;
+    right: 20%;
+  }
+  .galeria {
+    /* Create four equal columns that sits next to each other */
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  }
+  .galeria h1 {
+    color: black;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .galeria .row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .galeria .menuGaleria11 {
+    height: 240px;
+  }
+  .galeria .column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .galeria .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .galeria .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 600px) {
+  .galeria .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .descripcion {
+    overflow-x: hidden;
+  }
+  .descripcion .logo {
+    padding-top: 80px;
+    height: 170px;
+    padding-left: 100px;
+  }
+  .descripcion h2 {
+    padding-left: 10px;
+    margin-top: -10px;
+  }
+  .descripcion .descripcion1 {
+    height: 300px;
+    background-color: black;
+  }
+  .descripcion .descripcion1 .izq {
+    height: 100%;
+    float: left;
+    width: 15%;
+    background-image: url("../img/holographic.png");
+    background-size: cover;
+  }
+  .descripcion .descripcion1 .der {
+    height: 100%;
+    float: left;
+    width: 85%;
+    background-color: #1a1a1a;
+  }
+  .descripcion .descripcion1 .der p {
+    color: #999598;
+    padding: 80px;
+    padding-left: 240px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  .descripcion .descripcion1::after {
+    content: '';
+    margin-top: -155px;
+    background-image: url("http://www.shoekahuna.com/wp-content/uploads/2017/10/3J235_shot2.png");
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    position: absolute;
+    left: -100px;
+    overflow-x: hidden;
+  }
+  .descripcion .descripcion2 {
+    height: 300px;
+    background-color: white;
+  }
+  .descripcion .descripcion2 h2 {
+    font-size: 30px;
+    padding-left: 100px;
+    padding-top: 60px;
+  }
+  .descripcion .descripcion2 .izq {
+    height: 100%;
+    float: left;
+    width: 70%;
+    background-color: white;
+  }
+  .descripcion .descripcion2 .izq ul {
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-right: 100px;
+  }
+  .descripcion .descripcion2 .izq li {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  .descripcion .descripcion2 .der {
+    height: 100%;
+    float: left;
+    width: 30%;
+    background-image: url("../img/descripcion2.png");
+    background-size: cover;
+  }
+  .descripcion .descripcion3 {
+    height: 300px;
+    margin-bottom: 100px;
+    overflow-x: hidden;
+  }
+  .descripcion .descripcion3 h1 {
+    padding-top: 60px;
+  }
+  .descripcion .descripcion3 h2 {
+    padding-left: 100px;
+  }
+  .descripcion .descripcion3 p {
+    padding: 20px 100px;
+    font-size: 16px;
+  }
+  .descripcion .descripcion3::before {
+    content: '';
+    margin-top: -100px;
+    background-image: url("http://pluspng.com/img-png/converse-png--1200.png");
+    width: 500px;
+    height: 500px;
+    left: -265px;
+    overflow-x: hidden;
+  }
+  .descripcion .descripcion3::after {
+    content: '';
+    margin-top: -350px;
+    background-image: url("http://pluspng.com/img-png/converse-png--1200.png");
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    position: absolute;
+    right: -265px;
+    transform: scaleX(-1);
+    overflow-x: hidden;
+  }
+  .interaccion {
+    height: 400px;
+    background-image: url("../img/interaccion.png");
+    background-size: cover;
+    margin-bottom: 40px;
+  }
+  .interaccion .izq {
+    width: 35%;
+    height: 100%;
+    float: left;
+    /* Style the images inside the grid */
+    /* Create four equal columns that sits next to each other */
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  }
+  .interaccion .izq h1 {
+    padding-left: 150px;
+    padding-right: 0;
+    margin: 0;
+  }
+  .interaccion .izq .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+  }
+  .interaccion .izq .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .interaccion .izq .column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .interaccion .izq .column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    margin-left: 80px;
+  }
+  .interaccion .izq .personalizar {
+    border: 3px solid violet;
+    height: 56px;
+    width: 150px;
+    font-size: 20px;
+    margin-left: 5px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .interaccion .izq .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 600px) {
+  .interaccion .izq .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .interaccion .der {
+    width: 65%;
+    height: 100%;
+    float: left;
+  }
+  .interaccion .der .turntable {
+    display: inline-block;
+    margin: 0px;
+  }
+  .interaccion .der .turntable ul {
+    padding: 0px;
+    margin: 0px;
+    margin-left: -80px;
+  }
+  .interaccion .der .turntable ul li {
+    list-style-type: none;
+    display: none;
+  }
+  .interaccion .der .turntable ul li img {
+    width: 100%;
+  }
+  .interaccion .der .turntable ul li.active {
+    display: block;
+  }
+  .detalles {
+    height: 500px;
+  }
+  .detalles .izq {
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* The grid: Four equal columns that floats next to each other */
+    /* Style the images inside the grid */
+    /* Clear floats after the columns */
+    /* The expanding image container */
+    /* Expanding image text */
+  }
+  .detalles .izq .column {
+    float: left;
+    width: 16%;
+    padding: 5px;
+  }
+  .detalles .izq .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .detalles .izq .column img:hover {
+    opacity: 1;
+  }
+  .detalles .izq .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .detalles .izq .container {
+    width: 92%;
+    height: 70%;
+    margin-left: 80px;
+  }
+  .detalles .izq #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    color: white;
+    font-size: 20px;
+  }
+  .detalles .der {
+    width: 50%;
+    height: 100%;
+  }
+  .detalles .der h2 {
+    margin-top: 30px;
+  }
+  .detalles .der p {
+    font-size: 20px;
+  }
+  .detalles .der .Comprar {
+    border: 3px solid violet;
+    height: 56px;
+    width: 150px;
+    font-size: 20px;
+    margin-left: 5px;
+    display: block;
+    margin-top: 20px;
+  }
+  .detalles .der .dropbtn {
+    border: 3px solid violet;
+    height: 56px;
+    width: 150px;
+    background-color: white;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .detalles .der .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .detalles .der .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+  }
+  .detalles .der .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+  }
+  .news {
+    height: 350px;
+    padding-left: 60px;
+    margin-bottom: 50px;
+  }
+  .news h1 {
+    margin-left: 60px;
+    font-size: 25px;
+  }
+  .news p {
+    padding-bottom: 16px;
+    font-size: 18px;
+    padding-left: 160px;
+  }
+  .news form {
+    padding-left: 160px;
+  }
+  .news form input[type=email] {
+    border: 3px solid white;
+    height: 50px;
+    width: 400px;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .news form .enviar {
+    border: 3px solid white;
+    height: 56px;
+    width: 100px;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  .news::after {
+    content: '';
+    margin-top: -225px;
+    background-image: url("../img/suscri.png");
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    position: absolute;
+    left: -60px;
+  }
+  footer {
+    height: 150px;
+    align-items: flex-start;
+  }
+  footer h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  footer a {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-color: white;
+  }
+  footer .flex-container {
+    margin-top: -200px;
+    height: 100%;
+    display: flex;
+  }
+  footer .flex-item:nth-child(1) {
+    align-items: flex-start;
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+  }
+  footer .flex-item:nth-child(2) {
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  * h1 {
+    font-size: 30px;
+    padding-left: 100px;
+    padding-top: 100px;
+  }
+  * h2 {
+    font-weight: 200;
+    font-size: 20px;
+  }
+  * h3 {
+    font-size: 15px;
+  }
+  * h4 {
+    display: block;
+    font-size: 10px;
+  }
+  nav .izquierda {
+    float: left;
+    width: 80%;
+  }
+  nav .derecha {
+    width: 20%;
+    float: left;
+  }
+  nav p {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 200px;
+    font-family: "Permanent Marker", cursive;
+    font-size: 25px;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  nav li {
+    float: left;
+  }
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+  }
+  nav input {
+    display: none;
+  }
+  .banner #granim-canvas {
+    display: block;
+    width: 100%;
+    min-width: 200px;
+    height: calc(50vh - 50px);
+    min-height: 100px;
+  }
+  .banner img {
+    position: absolute;
+    margin-top: -260px;
+    right: 2%;
+    width: 60%;
+  }
+  .galeria {
+    /* Create four equal columns that sits next to each other */
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  }
+  .galeria h1 {
+    color: black;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: -30px;
+  }
+  .galeria .row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .galeria .menuGaleria11 {
+    height: 240px;
+  }
+  .galeria .column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .galeria .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-width: 800px) {
+  .galeria .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-width: 600px) {
+  .galeria .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .descripcion {
+    overflow-x: hidden;
+  }
+  .descripcion .logo {
+    padding-top: 80px;
+    height: 150px;
+    padding-left: 20px;
+  }
+  .descripcion h2 {
+    padding-left: 10px;
+    margin-top: -10px;
+  }
+  .descripcion .descripcion1 {
+    height: 260px;
+  }
+  .descripcion .descripcion1 .izq {
+    height: 100%;
+    float: left;
+    width: 15%;
+    background-image: url("../img/holographic.png");
+    background-size: cover;
+  }
+  .descripcion .descripcion1 .der {
+    height: 100%;
+    float: left;
+    width: 85%;
+    background-color: #1a1a1a;
+  }
+  .descripcion .descripcion1 .der p {
+    color: #999598;
+    padding: 40px;
+    padding-left: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .descripcion .descripcion1::after {
+    content: '';
+    margin-top: -105px;
+    background-image: url("http://www.shoekahuna.com/wp-content/uploads/2017/10/3J235_shot2.png");
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    position: absolute;
+    left: -180px;
+    overflow-x: hidden;
+  }
+  .descripcion .descripcion2 {
+    height: 300px;
+    background-color: white;
+  }
+  .descripcion .descripcion2 h2 {
+    font-size: 30px;
+    padding-left: 60px;
+    padding-top: 40px;
+  }
+  .descripcion .descripcion2 .izq {
+    height: 100%;
+    float: left;
+    width: 80%;
+    background-color: white;
+  }
+  .descripcion .descripcion2 .izq ul {
+    padding-left: 80px;
+    padding-top: 18px;
+    padding-right: 30px;
+  }
+  .descripcion .descripcion2 .izq li {
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .descripcion .descripcion2 .der {
+    height: 100%;
+    float: left;
+    width: 20%;
+    background-image: url("../img/descripcion2.png");
+    background-size: cover;
+  }
+  .descripcion .descripcion3 {
+    height: 350px;
+    margin-bottom: 100px;
+    overflow-x: hidden;
+  }
+  .descripcion .descripcion3 h1 {
+    padding-top: 40px;
+    padding-left: 60px;
+  }
+  .descripcion .descripcion3 h2 {
+    padding-left: 60px;
+  }
+  .descripcion .descripcion3 p {
+    padding: 20px 60px;
+    font-size: 16px;
+  }
+  .descripcion .descripcion3::before {
+    content: '';
+    display: none;
+  }
+  .descripcion .descripcion3::after {
+    content: '';
+    margin-top: -350px;
+    background-image: url("http://pluspng.com/img-png/converse-png--1200.png");
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    position: absolute;
+    right: -265px;
+    transform: scaleX(-1);
+    overflow-x: hidden;
+  }
+  .interaccion {
+    height: 400px;
+    background-image: url("../img/interaccion.png");
+    background-size: cover;
+    margin-bottom: 40px;
+  }
+  .interaccion .izq {
+    width: 35%;
+    height: 100%;
+    float: left;
+    /* Style the images inside the grid */
+    /* Create four equal columns that sits next to each other */
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  }
+  .interaccion .izq h1 {
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-right: 0;
+    margin: 0;
+  }
+  .interaccion .izq .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+  }
+  .interaccion .izq .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .interaccion .izq .column {
+    display: none;
+  }
+  .interaccion .izq .column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    margin-left: 80px;
+  }
+  .interaccion .izq .personalizar {
+    border: 3px solid violet;
+    height: 56px;
+    width: 150px;
+    font-size: 20px;
+    margin-left: 5px;
+    display: block;
+    margin-top: 220px;
+    margin-left: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-width: 800px) {
+  .interaccion .izq .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-width: 600px) {
+  .interaccion .izq .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .interaccion .der {
+    width: 65%;
+    height: 100%;
+    float: left;
+  }
+  .interaccion .der .turntable {
+    display: inline-block;
+    margin: 0px;
+  }
+  .interaccion .der .turntable ul {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 150px;
+    margin-left: -140px;
+  }
+  .interaccion .der .turntable ul li {
+    list-style-type: none;
+    display: none;
+  }
+  .interaccion .der .turntable ul li img {
+    width: 100%;
+  }
+  .interaccion .der .turntable ul li.active {
+    display: block;
+  }
+  .detalles {
+    height: 500px;
+  }
+  .detalles .izq {
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* The grid: Four equal columns that floats next to each other */
+    /* Style the images inside the grid */
+    /* Clear floats after the columns */
+    /* The expanding image container */
+    /* Expanding image text */
+  }
+  .detalles .izq .column {
+    float: left;
+    width: 16%;
+    padding: 5px;
+  }
+  .detalles .izq .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .detalles .izq .column img:hover {
+    opacity: 1;
+  }
+  .detalles .izq .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .detalles .izq .container {
+    width: 92%;
+    height: 70%;
+    margin-left: 80px;
+  }
+  .detalles .izq #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    color: white;
+    font-size: 20px;
+  }
+  .detalles .der {
+    width: 50%;
+    height: 100%;
+  }
+  .detalles .der h2 {
+    margin-top: 30px;
+  }
+  .detalles .der p {
+    font-size: 20px;
+  }
+  .detalles .der .Comprar {
+    border: 3px solid violet;
+    height: 56px;
+    width: 150px;
+    font-size: 20px;
+    margin-left: 5px;
+    display: block;
+    margin-top: 20px;
+  }
+  .detalles .der .dropbtn {
+    border: 3px solid violet;
+    height: 56px;
+    width: 150px;
+    background-color: white;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .detalles .der .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .detalles .der .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+  }
+  .detalles .der .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+  }
+  .news {
+    height: 350px;
+    padding-left: 60px;
+    margin-bottom: 50px;
+  }
+  .news h1 {
+    margin-left: 60px;
+    font-size: 25px;
+  }
+  .news p {
+    padding-bottom: 16px;
+    font-size: 18px;
+    padding-left: 160px;
+  }
+  .news form {
+    padding-left: 160px;
+  }
+  .news form input[type=email] {
+    border: 3px solid white;
+    height: 50px;
+    width: 400px;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .news form .enviar {
+    border: 3px solid white;
+    height: 56px;
+    width: 100px;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  .news::after {
+    content: '';
+    margin-top: -225px;
+    background-image: url("../img/suscri.png");
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    position: absolute;
+    left: -60px;
+  }
+  footer {
+    height: 150px;
+    align-items: flex-start;
+  }
+  footer h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  footer a {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-color: white;
+  }
+  footer .flex-container {
+    margin-top: -200px;
+    height: 100%;
+    display: flex;
+  }
+  footer .flex-item:nth-child(1) {
+    align-items: flex-start;
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+  }
+  footer .flex-item:nth-child(2) {
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

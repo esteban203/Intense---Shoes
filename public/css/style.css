@@ -1,0 +1,998 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* h1 {
+  display: block;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  padding-left: 200px;
+  padding-top: 100px;
+  font-weight: 600;
+}
+
+* h2 {
+  display: block;
+  color: black;
+  font-weight: 200;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+* h3 {
+  display: block;
+  color: black;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+* h4 {
+  display: block;
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+* a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+nav .izquierda {
+  float: left;
+  width: 80%;
+}
+
+nav .derecha {
+  width: 20%;
+  float: left;
+}
+
+nav p {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  padding-left: 180px;
+  padding-right: 200px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+}
+
+nav button {
+  display: block;
+  background-color: #eca5e3;
+  text-align: center;
+  margin: 15px 0 18px 0px;
+  padding: 5px 5px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav button img {
+  background-size: cover;
+}
+
+nav .carrito {
+  margin-left: 5px;
+  padding: 5px 5px;
+}
+
+nav button:hover {
+  background-color: #f881bc;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav li a:hover {
+  background-color: #eca5e3;
+}
+
+nav input {
+  height: 27px;
+  width: 250px;
+  border: none;
+  font-size: 14px;
+  padding: 7px 5px 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin: 15px 0 15px 25px;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: 350px;
+  background-image: url("https://images.unsplash.com/photo-1491898487514-29e95d92e3f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea406718e063a8cafed32f32912f4b96&auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-position-y: -300px;
+  -webkit-filter: brightness(0.3);
+  /* Safari 6.0 - 9.0 */
+  filter: brightness(0.3);
+}
+
+.banner2 {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position-y: -400px;
+}
+
+.banner3 {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position-y: -100px;
+}
+
+.filtros {
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+}
+
+.filtros h1 {
+  color: black;
+}
+
+.filtros .filtro {
+  height: 100px;
+  background-color: #141414;
+  display: flex;
+}
+
+.filtros .filtro .filtro1 {
+  display: flex;
+  padding-top: 10px;
+}
+
+.filtros .filtro .filtro1 h2 {
+  color: white;
+  padding-left: 200px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.filtros .filtro .filtro1 a {
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.filtros .filtro .filtro1 .botonRojo {
+  background-color: darkred;
+}
+
+.filtros .filtro .filtro1 .botonNegro {
+  background-color: gray;
+}
+
+.filtros .filtro .filtro1 .botonBlanco {
+  background-color: white;
+}
+
+.filtros .filtro .filtro1 .botonMiel {
+  background-color: #edbd71;
+}
+
+.filtros .filtro .filtro2 {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.filtros .filtro .filtro2 h2 {
+  color: white;
+}
+
+.filtros .filtro .filtro2 .dropbtn {
+  transition: 0.5s;
+  border: 3px solid violet;
+  height: 40px;
+  width: 160px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+}
+
+.filtros .filtro .filtro2 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.filtros .filtro .filtro2 .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+
+.filtros .filtro .filtro2 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.filtros .filtro .filtro2 .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.filtros .filtro .filtro2 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.filtros .filtro .filtro2 .dropdown:hover .dropbtn {
+  transition: 0.5s;
+  border: 3px solid black;
+  background-color: violet;
+  cursor: pointer;
+}
+
+.filtros .filtro .filtro3 {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.filtros .filtro .filtro3 h2 {
+  color: white;
+}
+
+.filtros .filtro .filtro3 .dropbtn {
+  transition: 0.5s;
+  border: 3px solid violet;
+  height: 40px;
+  width: 160px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+}
+
+.filtros .filtro .filtro3 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.filtros .filtro .filtro3 .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+
+.filtros .filtro .filtro3 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.filtros .filtro .filtro3 .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.filtros .filtro .filtro3 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.filtros .filtro .filtro3 .dropdown:hover .dropbtn {
+  transition: 0.5s;
+  border: 3px solid black;
+  background-color: violet;
+  cursor: pointer;
+}
+
+.productos {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.productos .zapatos {
+  display: block;
+  height: 100vh;
+}
+
+.productos .zapatos .mostrar {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.productos .zapatos .mostrar .zapato {
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.productos .zapatos .mostrar .zapato .imagen {
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0) blur(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.productos .zapatos .mostrar .zapato .imagen p {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background-color: white;
+  text-align: center;
+}
+
+.productos .zapatos .mostrar .zapato #comprar {
+  display: block;
+  position: absolute;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: -70px 230px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: black;
+  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+}
+
+.productos .zapatos .mostrar .zapato #comprar img {
+  background-size: cover;
+}
+
+.productos .zapatos .mostrar .zapato #comprar:hover {
+  -webkit-transition: .3s ease-in-out;
+  background-color: #8A3B58;
+  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+  box-shadow: 0 0 1px 5px rgba(138, 59, 88, 0.4), 0 0 1px 10px rgba(138, 59, 88, 0.1), 0 0 1px 15px rgba(138, 59, 88, 0.1);
+}
+
+.productos .zapatos .mostrar .zapato .descri {
+  display: none;
+}
+
+.productos .zapatos .mostrar .zapato .imagen:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+
+.productos .zapatos .mostrar .zapato .imagen:hover .descri {
+  display: block;
+  padding: 20px;
+  height: 8em;
+}
+
+.productos .zapatos .mostrar .zapato .imagen:hover .descri .nom {
+  font-size: 20px;
+  margin-bottom: 0.4em;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.detalles {
+  height: 700px;
+}
+
+.detalles .izq {
+  margin-top: 50px;
+  width: 50%;
+  height: 100%;
+  float: left;
+  /* The grid: Four equal columns that floats next to each other */
+  /* Style the images inside the grid */
+  /* Clear floats after the columns */
+  /* The expanding image container */
+  /* Expanding image text */
+}
+
+.detalles .izq .column {
+  float: left;
+  width: 14%;
+  padding: 5px;
+  height: 130px;
+  background-size: cover;
+  margin: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.detalles .izq .column img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  cursor: pointer;
+  display: none;
+}
+
+.detalles .izq .column:hover {
+  opacity: 1;
+}
+
+.detalles .izq .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.detalles .izq .container {
+  width: 86%;
+  height: 600px;
+  margin-left: 163px;
+  background-size: cover;
+  background-position-y: -50px;
+}
+
+.detalles .izq #imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  color: white;
+  font-size: 20px;
+}
+
+.detalles .der {
+  width: 50%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.detalles .der h2 {
+  margin-top: 100px;
+}
+
+.detalles .der p {
+  color: #999598;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin-right: 100px;
+}
+
+.detalles .der .Comprar {
+  transition: 0.5s;
+  border: 3px solid violet;
+  height: 56px;
+  width: 150px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+  display: block;
+  margin-top: 20px;
+}
+
+.detalles .der .Comprar:hover {
+  transition: 0.5s;
+  border: 3px solid black;
+  background-color: violet;
+  cursor: pointer;
+}
+
+.detalles .der .dropbtn {
+  transition: 0.5s;
+  border: 3px solid violet;
+  height: 50px;
+  width: 150px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+}
+
+.detalles .der .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.detalles .der .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+
+.detalles .der .dropdown-content a {
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.detalles .der .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.detalles .der .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.detalles .der .dropdown:hover .dropbtn {
+  transition: 0.5s;
+  border: 3px solid black;
+  background-color: violet;
+  cursor: pointer;
+}
+
+.tituloCarrito {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 1%;
+  top: 150px;
+  margin: 0;
+}
+
+.tituloCarrito h1 {
+  padding-top: 22px;
+  text-align: center;
+  padding-left: 0;
+}
+
+.Zapatitos {
+  height: 600px;
+}
+
+.Zapatitos .informacion {
+  width: 100%;
+}
+
+.Zapatitos .informacion .tituloCarrito {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  left: 0%;
+}
+
+.Zapatitos .informacion .tituloCarrito h1 {
+  padding-top: 22px;
+  text-align: center;
+  padding-left: -30px;
+}
+
+.Zapatitos .informacion .padre {
+  width: 100%;
+}
+
+.Zapatitos .informacion .padre .carrito .lista {
+  margin: 100px;
+  list-style-type: none;
+}
+
+.Zapatitos .informacion .padre .Formulario {
+  float: right;
+  display: flex;
+  width: 55%;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 340px;
+  right: -60px;
+}
+
+.Zapatitos .informacion .padre .Formulario button {
+  overflow: visible;
+}
+
+.Zapatitos .informacion .padre .Formulario button, .Zapatitos .informacion .padre .Formulario select {
+  text-transform: none;
+}
+
+.Zapatitos .informacion .padre .Formulario button, .Zapatitos .informacion .padre .Formulario input, .Zapatitos .informacion .padre .Formulario select, .Zapatitos .informacion .padre .Formulario textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+.Zapatitos .informacion .padre .Formulario input {
+  line-height: normal;
+}
+
+.Zapatitos .informacion .padre .Formulario textarea {
+  overflow: auto;
+}
+
+.Zapatitos .informacion .padre .Formulario #container {
+  border: solid 3px #474544;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+.Zapatitos .informacion .padre .Formulario form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.Zapatitos .informacion .padre .Formulario h1 {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Zapatitos .informacion .padre .Formulario .underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.Zapatitos .informacion .padre .Formulario .icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.Zapatitos .informacion .padre .Formulario .icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.Zapatitos .informacion .padre .Formulario .email {
+  float: right;
+  width: 45%;
+}
+
+.Zapatitos .informacion .padre .Formulario input[type='text'], .Zapatitos .informacion .padre .Formulario [type='email'], .Zapatitos .informacion .padre .Formulario select, .Zapatitos .informacion .padre .Formulario textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1.000em;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Zapatitos .informacion .padre .Formulario input[type='text']:focus, .Zapatitos .informacion .padre .Formulario [type='email']:focus, .Zapatitos .informacion .padre .Formulario textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.Zapatitos .informacion .padre .Formulario .message {
+  float: none;
+}
+
+.Zapatitos .informacion .padre .Formulario .name {
+  float: left;
+  width: 45%;
+}
+
+.Zapatitos .informacion .padre .Formulario select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png") no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.Zapatitos .informacion .padre .Formulario select::-ms-expand {
+  display: none;
+}
+
+.Zapatitos .informacion .padre .Formulario .subject {
+  width: 100%;
+}
+
+.Zapatitos .informacion .padre .Formulario .telephone {
+  width: 100%;
+}
+
+.Zapatitos .informacion .padre .Formulario textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+.Zapatitos .informacion .padre .Formulario ::-webkit-input-placeholder {
+  color: #474544;
+}
+
+.Zapatitos .informacion .padre .Formulario :-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+
+.Zapatitos .informacion .padre .Formulario ::-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+
+.Zapatitos .informacion .padre .Formulario :-ms-input-placeholder {
+  color: #474544;
+}
+
+.Zapatitos .informacion .padre .Formulario #form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Zapatitos .informacion .padre .Formulario #form_button:hover {
+  background: #474544;
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+  .Zapatitos .informacion .padre .Formulario #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Zapatitos .informacion .padre .Formulario h1 {
+    font-size: 26px;
+  }
+  .Zapatitos .informacion .padre .Formulario .underline {
+    width: 68px;
+  }
+  .Zapatitos .informacion .padre .Formulario #form_button {
+    padding: 15px 25px;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Zapatitos .informacion .padre .Formulario h1 {
+    font-size: 18px;
+  }
+  .Zapatitos .informacion .padre .Formulario .icon {
+    height: 35px;
+    width: 35px;
+  }
+  .Zapatitos .informacion .padre .Formulario .underline {
+    width: 53px;
+  }
+  .Zapatitos .informacion .padre .Formulario input[type='text'], .Zapatitos .informacion .padre .Formulario [type='email'], .Zapatitos .informacion .padre .Formulario select, .Zapatitos .informacion .padre .Formulario textarea {
+    font-size: 0.875em;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.zapatito {
+  background-color: #f2f2f2;
+  margin: 20px 80px;
+  display: flex;
+  width: 50%;
+}
+
+.zapatito .contp {
+  display: flex;
+}
+
+.zapatito .contp .contimagenc {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  display: flex;
+}
+
+.zapatito .contp .continfo {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.zapatito .contp .continfo p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.zapatito .contp .continfo .nombre {
+  font-weight: 700;
+}
+
+.zapatito .contp .continfo .codigo {
+  font-weight: 300;
+  color: gray;
+}
+
+footer {
+  margin-top: 300px;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  background-color: #1a1a1a;
+}
+
+footer h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-color: white;
+  color: white;
+}
+
+footer .flex-container {
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  vertical-align: top;
+}
+
+footer .flex-item:nth-child(1) {
+  align-items: flex-start;
+  margin: 10px;
+  padding: 20px;
+  font-size: 18px;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+footer .flex-item:nth-child(2) {
+  margin: 10px;
+  padding: 20px;
+  font-size: 18px;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+/*# sourceMappingURL=style.css.map */
