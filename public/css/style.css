@@ -43,6 +43,21 @@
   text-decoration: none;
 }
 
+#boton_1 {
+  background: black;
+  text-align: center;
+  color: white;
+  z-index: 1000;
+  padding: 2%;
+  width: 100%;
+  cursor: pointer;
+  
+  border-style: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+
 nav {
   background-color: black;
   height: 60px;
