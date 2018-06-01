@@ -72,8 +72,8 @@ app.get('/checkout', (req, res) => {
 });
 
 //Cambio de pagina a producto individual
-app.get('https://intense-shoes.herokuapp.com/:modelo', (req, res) => {
-    db.collection('zapatos').find({
+app.get('/producto/:modelo', (req, res) => {
+    db.collection('productos').find({
         modelo: req.params.modelo
     }).toArray((err, result) => res.render('producto', {
         modelos: result[0]
@@ -87,7 +87,7 @@ app.get('/productosPorIds', (req, res) => {
     arreglo = arreglo.map(function(id) {
         return new ObjectID(id);
     });
-    var prod = db.collection('zapatos')
+    var prod = db.collection('productos')
         .find({ _id: { $in: arreglo } })
         .toArray((err, result) => {
             res.send(result);
