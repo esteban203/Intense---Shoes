@@ -1,38 +1,13 @@
-function myFunction() {
-
-    var loader= new THREE.FBXLoader();
 
 
-    loader.load('/models/Samba Dancing.fbx', function (object) {
+var botonAzul = document.getElementById("azul");
+var botonNegro = document.getElementById("negro");
 
-
-
-object.mixer = new THREE.AnimationMixer(object);
-mixers.push(object.mixer);
-
-var action = object.mixer.clipAction(object.animations[0]);
-action.play();
-
-object.traverse(function (child) {
-
-if (child.isMesh) {
-
-child.castShadow = true;
-child.receiveShadow = true;
-
-}
-
-});
-
-scene.add(object);
-
-});
-}  
 
 //--------------------------
 
 
-    function myFunction_2() {
+    function myFunction() {
 
 var loader= new THREE.FBXLoader();
 
@@ -57,9 +32,10 @@ child.receiveShadow = true;
 }
 
 });
-scene.remove(object);
-scene.add(object);
 
+scene.add(object);
+object.position.y -=-40;
+ object.scale.x = -1;
 
 });
 }

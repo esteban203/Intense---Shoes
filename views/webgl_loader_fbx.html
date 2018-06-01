@@ -32,12 +32,28 @@
 			font-weight: bold;
 		}
 
-		#boton {
+		#boton_1 {
+			background: black;
+			text-align: center;
+			color: white;
+			z-index: 1000;
+			padding: 2%;
+			width: 100%;
+			cursor: pointer;
+			
+			border-style: none;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-size: 50px;
+			font-weight: 700;
+		}
+
+		#boton_2 {
 			background: #fff;
 			text-align: center;
 			color: black;
 			z-index: 1000;
 			padding-left: 1000px;
+		
 		}
 	</style>
 </head>
@@ -45,10 +61,8 @@
 <body>
 
 
-	<button onclick="myFunction(this)" id="boton">Click me</button>
-	<button onclick="myFunction_2(this)" id="boton">Click me 2</button>
-
-
+	<button onclick="myFunction()" id="boton_1">CREA TU ESTILO</button>
+	
 
 	<script src="/build/three.js"></script>
 
