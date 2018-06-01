@@ -14,19 +14,27 @@ app.set('view engine', 'hbs');
 app.use(express.static('public'));
 
 // Conectarse a Base de Datos
-MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+MongoClient.connect('mongodb+srv://cluster0-ied74.mongodb.net/tienda', 
+{
+    auth:{
+        user: 'esteban203',
+        password: ' coldplay'
+    }
+},
+
+function (err, client) {
+    
     if (err) throw err;
 
-    db = client.db('zapatos');
+    db = client.db('tienda');
 
     // Iniciar servidor
-    app.listen(5000);
-    console.log("Server Connect")
+    app.listen(process.env.PORT || 1234); 
 });
 
 app.get('/', (req, res) => {
 
-    var prod = db.collection('zapatos')
+    var prod = db.collection('tienda')
         .find();
 
     if (req.query.color)
